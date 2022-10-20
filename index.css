@@ -65,7 +65,7 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
 .main-container .pic{
     width: 48%;
     height: 100%;
-    background-image: url(zak-7wBFsHWQDlk-unsplash.jpg); background-size: cover; background-position: center;
+    background-image: url(scott-rodgerson-z0MDyylvY1k-unsplash.jpg); background-size: cover; background-position: center;
 }
 
 .main-container .signup{
@@ -73,13 +73,14 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
     height: 100%;
      /* border: solid; */
      /* border: solid 1px blue; */
-    padding: 0 45px;
+    padding: 0 40px;
     display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
     /* background: rgb(165, 42, 42, 0.4); */
 }
 
 .main-container .signup h2{
     font-size: 40px; color: rgb(97, 97, 97);  font-family: 'SF pixelate';
+    font-weight: 400;
 }
 
 .main-container .signup h2 span{
@@ -99,21 +100,23 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
     width: 330px; 
     /* border: solid 1px; */
     /* border: solid 1px blue; */
-     margin-top: 0; 
+     margin-top: 2.5%; 
      height: fit-content;
       display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
-     margin-left: 5%;
+     margin-left: 10%;
 }
 
 .main-container .signup .form .a{
-    width: fit-content; border: solid 1px silver;
+    width: fit-content; 
+    /* border: solid 1px rgba(252, 252, 16, 0.582); */
      margin-top: 30px; display: flex; align-items: center; justify-content: center; 
      /* padding: 10px 60px;  */
      width: 100%; height: 50px;
      border-radius: 10px; color: black;
-     transition: 300ms;
+     transition: 150ms;
      text-decoration: none; font-weight: 500;
      font-size: 18px;
+     box-shadow: 0 0 0 1px black;
 }
 
 .main-container .signup .form a:hover{
@@ -121,25 +124,30 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
 }
 
 .main-container .signup .form a img{
-    width: 25px; height: 25px; margin-right: 15px; 
+    width: 25px; height: 25px; margin-right: 13px; 
     /* border: solid 1px; */
 }
 
 .main-container .signup .form .email{
     /* padding: 13px 82.5px; */
+    background: black; color: white; font-size: 19px; font-weight: 600;
+}
+
+.main-container .signup .form .email .sp{
+    margin-right: 7px;
 }
 
 .main-container .signup .form .email:hover{
-    background: rgb(189, 189, 189);
+    background: rgb(0, 0, 0, .9);
 }
 
 
 .main-container .signup .form .sp1{
-    width: 100%; border-top: solid 0.1px silver; height: 1px; margin-top: 30px;
+    width: 100%; border-top: solid 0.1px silver; height: 1px; margin: 35px auto 5px auto;
 }
 
 .main-container .signup .form p{
-    margin-top: 30px; font-size: 14px;
+    margin-top: 30px; font-size: 14px; line-height: 22px;
 }
 
 .main-container .signup .form .sp2{
@@ -154,24 +162,26 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
     display: flex; flex-direction: column; align-items: flex-start; justify-content: center; border: solid 1px; width: 100%;
 }
 
-.main-container .signup .form h3{
+.main-container .signup .sp3{
+    width: 330px; margin: 0 10%; text-align: left;
+    margin-top: 2%; 
+    /* border: solid 1px; */
+}
+
+.main-container .signup .sp3 h3{
     font-weight: 400;  width: 100%;  text-align: left; margin-top: 30px;
 }
 
-.main-container .signup .form .signin{
-    margin-top: 10px; background: rgba(0, 0, 0, 0.9); color: white; text-decoration: ; font-size: 16px;
-    /* margin-left: -30px; */
-    /* font-size: ; */
-    font-size: 20px;
+.main-container .signup .sp3 .signin{
+   display: flex; width: 100%; border: solid 1px; justify-content: center; align-items: center;
+   margin-top: 10px; border-radius: 20px; text-decoration: none; font-size: 18px; font-weight: 500; height: 45px;
 }
 
 .main-container .signup .form .signin:hover{
     background: rgba(0, 0, 0, 0.701);     
 }
 
-.main-container .signup .form .a .sp{
-    margin-right: 10px;
-}
+
 
 @media screen and (max-width: 850px) {
     .main-container .signup .form{
@@ -183,85 +193,159 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
           display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
          margin-left: 0%;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .main-container .pic{
-        width: 100%;
-        height: 100%;
-        background-image: url(zak-7wBFsHWQDlk-unsplash.jpg); background-size: cover; background-position: center;
-        position: absolute;
-        filter: blur(10px);
-        background-color: rgb(255, 255, 255, .95);
-        opacity: 0.8;
-        background-blend-mode: overlay;
-        /* display: none; */
-    }
-
-    .main-container .signup{
-        position: relative;
-    }
-
-    .main-container .signup h2{
-        font-size: 38px; color: rgb(97, 97, 97);  font-family: 'SF pixelate';
-        margin-bottom: 5px; 
-        /* color: blue !important; */
-        /* border: solid white; */
-    }
-
-    .main-container .signup h4{
-        font-size: 22px; color: rgb(97, 97, 97); 
-        /* font-weight: 500; */
-         margin-bottom: 5%;
-    }
-
-    .main-container .signup{
-        width: 100%;
-        height: 100%;
-         /* border: solid; */
-         border:  1px blue;
-        padding: 0 20px;
-        display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
-        margin: 0 auto;
-
-    }
-
-    .main-container .signup h4{
-        font-size: 20px; color: rgb(97, 97, 97); 
-        font-weight: 500;
-    }
-    
-    .main-container .signup .form{
-        width: 100%; 
+    .main-container .signup .sp3{
+        width: 100%; margin: 0 5%; text-align: left;
+        margin-top: 2%; 
         /* border: solid 1px; */
-        border:  none 1px blue;
-         margin-top: 0; 
-         height: fit-content;
-          display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
-         margin-left: 0%;
-         /* position: relative; */
-    }
-
-    .main-container .signup .form .a{
-        width: fit-content; border: solid 1px silver;
-         margin-top: 10%; display: flex; align-items: center; justify-content: center; 
-         /* padding: 10px 60px;  */
-         width: 100%; height: 55px;
-         border-radius: 10px; color: black;
-         transition: 300ms;
-         text-decoration: none; font-weight: 500;
-         font-size: 20px;
-    }
-    
-    .main-container .signup .form .signin{
-        margin-top: 10px; background: rgba(0, 0, 0, 0.801);
-        color: white;
     }
 
     .br{
         display: none;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    body{
+        height: fit-content; overflow: auto;
+    }
+    .main-container{
+        flex-direction: column; justify-content: center;
+        height: fit-content; overflow: auto;
+    }
+    
+    .main-container .pic{
+        width: 100%;
+        height: 40vh;
+        background-image: url(scott-rodgerson-z0MDyylvY1k-unsplash.jpg); background-size: cover; background-position: center;
+        /* position: absolute;
+        filter: blur(10px);
+        background-color: rgb(255, 255, 255, .95);
+        opacity: 0.8;
+        background-blend-mode: overlay; */
+        /* display: none; */
+        order: 2;
+        /* border: solid; */
+    }
+
+    .main-container .signup{
+        justify-content: space-evenly;
+        /* position: relative; */
+        /* border: solid 1px blue; */
+        margin: 40px 0;
+        width: 90%; 
+        padding: 30px 5%;
+        margin-right: auto;
+        height: fit-content;
+
+        order: 1;
+    }
+
+    .main-container .signup .form{
+        justify-content: space-evenly;
+        /* position: relative; */
+        /* border: solid 1px silver; */
+        margin: 0 auto;
+        width: 90%; 
+        margin-top: 25px;
+    }
+
+    .main-container .signup .sp3{
+        width: 90%; margin: 0 auto; text-align: left;
+        margin-top: 10%;
+    }
+    
+    .main-container .signup .sp3 h3{
+        font-weight: 400;  width: 100%;  text-align: left; 
+    }
+
+    .main-container .signup .sp3 .signin{
+        display: flex; width: 100%; border: solid 0.3px; justify-content: center; align-items: center;
+        margin-top: 10px; border-radius: 20px; text-decoration: none; font-size: 18px; font-weight: 500; height: 45px;
+     }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .main-container .signup h2{
+        font-size: 36px; color: rgb(97, 97, 97);  font-family: 'SF pixelate';
+        font-weight: 400;
+    }
+
+    .main-container .signup{
+        justify-content: space-evenly;
+        /* position: relative; */
+        /* border: solid 1px blue; */
+        margin: 0 auto;
+        width: 100%; 
+        padding: 40px 5%;
+    }
+
+    .main-container .signup .form .a{
+        width: fit-content; 
+        /* border: solid 1px rgba(252, 252, 16, 0.582); */
+         margin-top: 30px; display: flex; align-items: center; justify-content: center; 
+         /* padding: 10px 60px;  */
+         width: 100%; height: 50px;
+         border-radius: 10px; color: black;
+         transition: 150ms;
+         text-decoration: none; font-weight: 500;
+         font-size: 18px;
+         box-shadow: 0 0 0 0.5px black;
+    }
+
+    
+.main-container .signup .form .email{
+    /* padding: 13px 82.5px; */
+    background: black; color: white; font-size: 19px; font-weight: 600;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 290px) {

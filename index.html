@@ -19,27 +19,31 @@
 
         </div>
         <div class="signup">
-            <h2>C<span class="s">odehub</span></h2>
-            <h4>Code, Meet, Have fun <span class="s"> and create great projects <br class="br"> all</span > on <span class="so">  Codehub</span></h4>
-
+            <span>
+                <h2>C<span class="s">odehub</span></h2>
+                <h4>Code, Meet, Have fun <span class="s"> and create great projects <br class="br"> all</span > on <span class="so">  Codehub</span></h4>
+            </span>
             <div class="form">
-                <a href="" class="a"><img src="apple-logo-svgrepo-com.svg" alt=""><span class="sp"> Sign up with Apple</span></a>
-                <a href="" class="a"><img src="google-svgrepo-com (1).svg" alt=""><span class="sp"> Sign up with Google</span></a>
-
+                <a href="#" class="a" onclick="onFunction();"><img src="google-svgrepo-com (2).svg" alt=""><span class="sp"> Sign up with Google</span></a>
+                <a href="#" class="a" onclick="onFunction();"><img src="apple-logo-svgrepo-com.svg" alt=""><span class="sp"> Sign up with Apple</span></a>
+                
                 <span class="sp1"></span>
-                <a href="" class="a email"><span class="sp">Sign up with </span> E-mail</a>
-                <p>By signing up, you agree to our <a href="">Terms of service</a> and <br class="br">
-                  <a href="">Privacy Policy,</a> including <a href="">Cookie Use.</a></p>
 
-               <h3>Have an account ?</h3>
-               <a href="" class="a signin">Sign in</a>
+                <a href="#" class="a email"><span class="sp">Sign up with </span> e-mail</a>
+                <p>By signing up, you agree to our <a href="">Terms of service</a> and <br class="br"><a href="#">Privacy Policy,</a> including <a href="#">Cookie Use.</a></p>
+
+               
             </div>
+            <span class="sp3">
+                <h3>Already have an account ?</h3>
+               <a href="#" class="signin" onclick="onFunction();">Sign in</a>
+            </span>
         </div>
     </div>
-    <div class="login">
+    <div class="login" id="login">
         <div class="log" id="log">
             <div class="x">
-                <i class="material-icons xicon">close</i> 
+                <i class="material-icons xicon" onclick="myFunction()">close</i> 
                 <h2>Codehub</h2>
                 <!-- <span></span> -->
             </div>
@@ -49,5 +53,15 @@
             </form>
         </div>
     </div>
+
+    <script>
+        function myFunction(){
+            document.getElementById("login").style.display = "none";
+        }
+
+        function onFunction(){
+            document.getElementById("login").style.display = "flex";
+        }
+    </script>
 </body>
 </html>
