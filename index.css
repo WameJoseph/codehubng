@@ -146,7 +146,19 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
 
 
 .main-container .signup .form .sp1{
-    width: 100%; border-top: solid 0.1px silver; height: 1px; margin: 30px auto 0px auto;
+    width: 100%; display: flex; justify-content: space-between; align-items: center;
+    height: fit-content; 
+    margin: 25px auto -5px auto;
+}
+
+.main-container .signup .form .sp1 .spp{
+    width: 100%; border-top: solid 0.1px silver;  
+    display: flex;
+}
+
+.main-container .signup .form .sp1 h6{
+    margin: 0 5px;
+    font-weight: 300;
 }
 
 .main-container .signup .form p{
@@ -305,7 +317,7 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh; overflow: hidden;}
         /* border: solid 1px rgba(252, 252, 16, 0.582); */
          margin-top: 30px; display: flex; align-items: center; justify-content: center; 
          /* padding: 10px 60px;  */
-         width: 100%; height: 40px;
+         width: 100%; height: 45px;
          border-radius: 10px; color: black;
          transition: 150ms;
          text-decoration: none; font-weight: 500;
