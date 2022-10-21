@@ -39,7 +39,7 @@
                     <span class="spp"></span>
                 </span>
 
-                <a href="#" class="a email"><span class="sp">Sign up with </span> e-mail</a>
+                <a href="#" class="a email" onclick="onFunction();"><span class="sp">Sign up with </span> e-mail</a>
                 <p>By signing up, you agree to our <a href="">Terms of service</a> and <br class="br"><a href="#">Privacy Policy,</a> including <a href="#">Cookie Use.</a></p>
 
                
@@ -50,27 +50,53 @@
             </span>
         </div>
     </div>
-    <div class="login" id="login">
+    <div class="box" id="box">
         <div class="log" id="log">
             <div class="x">
                 <i class="material-icons xicon" onclick="myFunction()">close</i> 
                 <h2>Codehub</h2>
                 <!-- <span></span> -->
             </div>
-            
-            <form action="" method="post" class="signup">
-                <Label>Create account</Label>
-            </form>
+
+            <span class="signup">
+                <h2 class="h2">Create account</h2>
+                <form action="" method="post">
+
+                    <span class="sp">
+                        <input type="text" class="in1" >
+                        <label for="Username" class="username">Your preferred username</label>
+                    </span>
+                    <span class="sp">
+                        <input type="email" class="in1" >
+                        <label for="email">Enter your email</label>
+                    </span>
+                    <span class="sp">
+                        <input type="password" class="in1">
+                        <label for="password">Password</label>
+                    </span>
+                    <span class="sp">
+                        <input type="password" class="in1">
+                        <label for="password">re-enter your password</label>
+                    </span>
+
+                    <div class="h4" style="margin: auto 0; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <h4>Asked question</h4>
+                        <p style="margin-top: 5px;">Concerned about your privacy ? don't worry codehub is devoted to an open data collation and ad-use policy</p>
+                    </div>
+
+                        <button type="submit">Continue <span>to Codehub</span></><i class="material-icons">east</i></button>
+                </form>
+            </span>
         </div>
     </div>
 
     <script>
         function myFunction(){
-            document.getElementById("login").style.display = "none";
+            document.getElementById("box").style.display = "none";
         }
 
         function onFunction(){
-            document.getElementById("login").style.display = "flex";
+            document.getElementById("box").style.display = "flex";
         }
     </script>
 </body>
