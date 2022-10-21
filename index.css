@@ -564,8 +564,8 @@ input:not(placeholder-shown) + label{
 }
 
 .box  .log{
-    width: 98%; margin: auto auto; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
-    height: 83%; border-radius: 10px; 
+    width: 95%; margin: auto auto; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;
+    height: 80%; border-radius: 10px; 
     background: white; 
     /* border: solid 2px; */
     position: relative; 
