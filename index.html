@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Prompt:wght@300;400;500;600&family=Public+Sans:wght@200;300;400;500;600&family=Red+Hat+Display:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Codehub: Code, Meet Hub</title>
 </head>
 <body>
@@ -30,8 +31,8 @@
                 <h4>Code, meet,<span class="s"> and create great projects <br class="br"> all</span > on <span class="so">  Codehub</span></h4>
             </span>
             <div class="form">
-                <a href="#" class="a" onclick="onFunction();"><img src="google-svgrepo-com (2).svg" alt=""><span class="sp"> Sign up with Google</span></a>
-                <a href="#" class="a" onclick="onFunction();"><img src="apple-logo-svgrepo-com.svg" alt=""><span class="sp"> Sign up with Apple</span></a>
+                <a href="#" class="a" onclick="upFunction();"><img src="google-svgrepo-com (2).svg" alt=""><span class="sp"> Sign up with Google</span></a>
+                <a href="#" class="a" onclick="upFunction();"><img src="apple-logo-svgrepo-com.svg" alt=""><span class="sp"> Sign up with Apple</span></a>
                 
                 <span class="sp1">
                     <span class="spp"></span>
@@ -39,21 +40,21 @@
                     <span class="spp"></span>
                 </span>
 
-                <a href="#" class="a email" onclick="onFunction();"><span class="sp">Sign up with </span> e-mail</a>
+                <a href="#" class="a email" onclick="upFunction();"><span class="sp">Sign up with </span> e-mail</a>
                 <p>By signing up, you agree to our <a href="">Terms of service</a> and <br class="br"><a href="#">Privacy Policy,</a> including <a href="#">Cookie Use.</a></p>
 
                
             </div>
             <span class="sp3">
                 <h3>Already have an account ?</h3>
-               <a href="#" class="signin" onclick="onFunction();">Sign in</a>
+               <a href="#" class="signin" onclick="inFunction();">Sign in</a>
             </span>
         </div>
     </div>
     <div class="box" id="box">
         <div class="log" id="log">
             <div class="x">
-                <i class="material-icons xicon" onclick="myFunction()">close</i> 
+                <i class="material-icons xicon" onclick="offFunction()">close</i> 
                 <h2>Codehub</h2>
                 <!-- <span></span> -->
             </div>
@@ -79,7 +80,7 @@
                         <label for="password">re-enter your password</label>
                     </span>
 
-                    <div class="h4" style="margin: auto 0; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="h4" style="margin: 5% 0; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                         <h4>Asked question</h4>
                         <p style="margin-top: 5px; font-size: 14px;">Concerned about your privacy ? don't worry codehub is devoted to an open data collation and ad-use policy</p>
                     </div>
@@ -87,19 +88,75 @@
                         <button type="submit">Continue <span>to Codehub</span></><i class="material-icons">east</i></button>
                 </form>
             </span>
-            <span class="login">
-                
+            <!-- <span class="login" id="login">
+                <h2 class="h2">Sign in to <span>Codehub</span></h2>
+                <form action="" method="post">
+                    <span class="sp">
+                        <input type="text" class="in1" >
+                        <label for="Username" class="username">Email or Username</label>
+                    </span>
+                    <span class="sp">
+                        <input type="password" class="in1">
+                        <label for="password">Password</label>
+                    </span>
+                    <span class="ss"></span>
+                </form>
+            </span> -->
+        </div>
+        <div class="log log2" id="log2">
+            <div class="x">
+                <i class="material-icons xicon" onclick="offFunction()">close</i> 
+                <h2>Codehub</h2>
+                <!-- <span></span> -->
+            </div>
+
+            <span class="signup">
+                <h2 class="h2">Sign in <span>Codehub</span></h2>
+                <form action="" method="post">
+
+                    <span class="sp">
+                        <input type="text" class="in1" >
+                        <label for="Username" class="username">Email or Username</label>
+                    </span>
+                    <span class="sp">
+                        <input type="password" class="in1">
+                        <label for="password">Password</label>
+                    </span>
+                    
+                    <span class="ss"></span>
+
+                    <a href="#"><img src="google-svgrepo-com (2).svg" alt=""> Sign in with Google</a>
+                    <a href="#"><img src="apple-logo-svgrepo-com.svg" alt=""> Sign in with Apple</a>
+
+
+                    <button type="submit">Login <span>to Codehub</span></><i class="material-icons">east</i></button>
+                </form>
             </span>
         </div>
     </div>
 
     <script>
-        function myFunction(){
+        function offFunction(){
             document.getElementById("box").style.display = "none";
+            document.body.style.overflow = "auto";
         }
 
-        function onFunction(){
+        function upFunction(){
             document.getElementById("box").style.display = "flex";
+            document.getElementById("log").style.display = "flex";
+            document.getElementById("log2").style.display = "none";
+            document.body.style.overflow = "hidden";
+
+            
+        }
+
+        function inFunction(){
+            document.getElementById("box").style.display = "flex";
+            document.getElementById("log").style.display = "none";
+            document.getElementById("log2").style.display = "flex";
+            document.body.style.overflow = "hidden";
+            
+
         }
     </script>
 </body>
