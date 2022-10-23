@@ -115,8 +115,8 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
 }
 
 .main-container nav .third .sp1 .post{
-    width: 50px; 
-    height: 50px;
+    width: 45px; 
+    height: 45px;
     display: flex; 
     justify-content: left; 
     align-items: center; 
@@ -127,16 +127,16 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
     /* box-shadow: 2.5px 2.5px rgb(136, 136, 136); */
     /* font-weight: 500; */
     letter-spacing: 1px;
-    font-size: 20px; transition: 0.2s;
+    font-size: 18px; transition: 0.2s;
     margin-left: 0px;
     margin-right: -5px;
 }
 
 .main-container nav .third .sp1 .post i{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    width: 35px; 
-    height: 35px;
+    width: 30px; 
+    height: 30px;
     background: rgb(241, 241, 26);
     border-radius: 100%; transition: .2s;
     display: flex; justify-content: center; align-items: center;
@@ -173,7 +173,7 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
 }
 
 .main-container nav .third .sp1 .notification i{
-    font-size: 30px;
+    font-size: 28px;
     /* transform: rotate(355deg); */
     /* transition: cubic-bezier(0.47, 0, 0.745, 0.715); */
     /* animation-name: wame;
@@ -219,7 +219,7 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
     }
 
     .main-container nav .third .sp1 .settings i{
-        font-size: 30px;
+        font-size: 28px;
         color: black; 
     }
 
@@ -247,8 +247,10 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
     display: flex; justify-content: center; align-items: center;
     width: fit-content; height: fit-content; 
     width: 40px; height: 40px; color: white; font-size: 19px; text-decoration: none;
+    text-align: center;
     background: green; border-radius: 100%;
     transition: .2s;
+    /* border: solid silver; */
 }
 
 
@@ -260,7 +262,9 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
     display: none;
 }
 
-
+.mobile-nav{
+    display: none;
+}
 
 
 
@@ -282,10 +286,123 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
     .main-container nav form button{ 
         width: 14%; 
     }
+
+    
 }
 
 
 @media screen and (max-width: 800px) {
+    .main-container nav{ 
+        width: 100%;  
+        padding: 13px 4% 13px 6%;
+    }
+
+    .main-container nav .logo{ 
+        font-size: 26px; 
+    }
+
+    .main-container nav form input{ 
+        width: 250px; font-size: 15px; letter-spacing: .3px;
+    }
+
+    .main-container nav .user{
+        display: none;
+    }
+
+    .main-container nav .third .sp1 .search i{
+        color: black; font-size: 26px;
+    }
+
+    .main-container nav .third .sp1 .mnone{
+        display: none;
+    }
+
+    .main-container nav .third .sp1 .post i{
+        font-size: 22px;
+        font-weight: 600;
+        width: 30px; 
+        height: 30px;
+        background: rgb(241, 241, 26);
+        border-radius: 100%; transition: .2s;
+        box-shadow: 2.5px 2.5px rgb(185, 184, 184);
+    
+        filter: drop-shadow(0px 0px 0 10px black);
+    }
+
+    .main-container nav .third .sp1 .post{
+        width: 40px; 
+        height: 40px;
+        margin: 0;
+    }
+    
+    .mobile-nav{
+        width: 100%; display: flex; justify-content: center; align-items: center; border:  1px; height: 55px; position: fixed; top: auto; left: auto; bottom: 0;
+    }
+
+    .mobile-nav .div{
+        width: 100%; 
+        border-radius: 0px; 
+        box-shadow: 1px 1px 3px gray none; 
+        border-top: solid 1px silver; 
+        height: 100%; 
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        /* background: silver; */
+        
+    }
+
+    .mobile-nav .div a{
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        text-decoration: none;
+        height: 100%;
+        /* border: solid 1px; */
+        /* width: 45px;     */
+        color: black;
+        padding: 0 10px;
+        /* font-size: 30px; */
+        width: 45px;
+    }
+
+    .mobile-nav .div a:hover{
+        background-color: rgb(0, 0, 0, 0.2);
+    }
+
+    .mobile-nav .div a i{
+        display: flex; align-items: center; justify-content: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .mobile-nav .div a p{
+        display: flex; align-items: center; justify-content: center;
+        font-size: 18px;
+        padding: 8px 10px;
+        color: white;
+        border-radius: 100%;
+        background: green;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
     .main-container nav{ 
         width: 100%;  
         padding: 13px 4% 13px 6%;
