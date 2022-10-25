@@ -718,8 +718,15 @@ body{width: 100%; margin: 0; padding: 0; height: 100vh;}
     }
      */
 
+     .main-container .friends{
+        height: 80px;
+        background: rgba(247, 247, 247, 0.548);
+        box-shadow: 0 1px 2px rgb(235, 235, 235);
+    
+    }
+
      .main-container .friends .sp1 .line{
-        width:1px; height: 50%;
+        width:1px; height: 40%;
         border: solid 1px rgb(172, 172, 172);
         /* margin: 0 30px; */
         /* margin-left: 30px; */
